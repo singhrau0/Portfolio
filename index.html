@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kasaudhan - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #4a90e2;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            animation: fadeIn 2s;
+        }
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #4a90e2;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4a90e2;
+            color: white;
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff6f61;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 1rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aman Kasaudhan</h1>
+        <p>Data Scientist | Trainer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Highly motivated Data Scientist with over 5 years of experience, including 3+ years as a Data Science Trainer at top EdTech giants Great Learning and Upgrad. I have delivered 2500+ hours of training, earning 15000+ positive reviews with a 4.75 out of 5-star rating, and trained over 1000 students. My expertise spans Data Science, AI, Machine Learning, Deep Learning, Data Analysis, and NLP. I am also skilled in teaching Full Stack Development and Cloud Technologies. This versatility enables me to adapt and teach various tech domains effectively.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages & Frameworks: Python, HTML/CSS/JavaScript, Django</li>
+            <li>Data Science & Machine Learning: Machine Learning Algorithms, Deep Learning, NLP, Keras, TensorFlow, OpenCV</li>
+            <li>Data Analysis & Visualization: Excel, Tableau, Power BI, Statistics</li>
+            <li>Database Management: MSSQL Server, MongoDB, Big Data</li>
+            <li>Web Development & Automation: Backend Development, API Development, Selenium, Web Scraping, Automation</li>
+            <li>Cloud Computing: AWS, GCP Tools</li>
+            <li>Other Skills: Observation, Decision Making, Communication, Training</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Aug 2019 - Oct 2023<br>Bachelor of Technology in Computer Science<br>Abdul Kalam Technical University, Completed in 2023</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Mar 2019 - April 2021: Freelance Data Scientist</h3>
+        <p>Developed projects using machine learning, Python, SQL, etc., including Facebook automation, face mask detection, and weather prediction. Built and managed websites using WordPress, ensuring smooth operation and maintenance.</p>
+        <h3>June 2021 - Feb 2023: Data Scientist | Vertocity (EdTech Company)</h3>
+        <p>Delivered freelance Data Science projects for clients, specializing in machine learning and predictive analytics. Provided training to students and professionals, addressing doubts and consulting on commercial plans.</p>
+        <h3>March 2023 - Present: Data Science, Machine Learning, and AI Trainer | Great Learning & Upgrad</h3>
+        <p>Conducted over 2500 hours of Data Science, Machine Learning, and AI sessions. Delivered training to 1000+ students, receiving 15000+ positive reviews with a 4.75 out of 5-star rating. Covered topics including machine learning algorithms, deep learning, natural language processing, and cloud computing.</p>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <p>Qualified Data Science Hackathon conducted by EICT IIT Kanpur (2022)</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Address: Manikonda Hyderabad Telangana India</p>
+        <p>Phone: +91 9305009726</p>
+        <p>Email: singhrau@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/amankasaudhan" target="_blank">linkedin.com/in/amankasaudhan</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll("nav ul li a");
+            navLinks.forEach(link => {
+                link.addEventListener("mouseover", () => {
+                    link.style.color = "#ff6f61";
+                });
+                link.addEventListener("mouseout", () => {
+                    link.style.color = "white";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
